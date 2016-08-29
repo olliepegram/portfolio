@@ -2,12 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .bod {
-    background-color: #e6e6e6;
+    background-color: #f3f3f3;
     font-family: 'Miriam Libre', sans-serif;
-    width: 100vw;
-    height: 100vh;
-    border-top: 5px solid #2a86e6;
-    border-bottom: 5px solid #2a86e6;
+    height: 100%;
+    width: 100%;
 }
 .bod::after {
     content: "";
@@ -19,6 +17,13 @@
     right: 0;
     position: absolute;
     z-index: -1;
+}
+.top {
+    background-color: #F3F3F3;
+    font-family: 'Miriam Libre', sans-serif;
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #2a86e6;
 }
 .name {
     text-align: center;
@@ -73,6 +78,21 @@
     display: inline-block;
     margin: 80px;
     padding: 10px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #2a86e6;
+    transition: all ease 0.8s;
+}
+.social1:hover {
+    box-shadow: inset 100px 0 0 0 #2a86e6;
+    color: #fff;
+}
+.social2:hover {
+    box-shadow: inset 0 100px 0 0 #2a86e6;
+    color: #fff;
+}
+.social3:hover {
+    box-shadow: inset -100px 0 0 0 #2a86e6;
+    color: #fff;
 }
 .social1 p,
 .social2 p,
@@ -87,4 +107,61 @@
 }
 .social3 {
     border-top: 2px solid #0077b5;
+}
+/* ----------- Non-Retina Screens ----------- */
+@media (max-width:1600px) {
+    .social1,
+    .social2,
+    .social3 {
+        margin: 40px;
+    }
+}
+@media (max-width:800px) {
+    .social1,
+    .social2,
+    .social3 {
+        margin: 20px;
+    }
+}
+@media (max-width:400px) {
+    .social1,
+    .social2,
+    .social3 {
+        margin: 0;
+    }
+}
+.container-fluidd {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+}
+/* ABOUT SECTION */
+.about {
+    text-align: center;
+    margin: 100px auto;
+    width: 500px;
+}
+.about h1 {
+    border-bottom: 3px solid #2a86e6;
+    padding: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+.about p {
+    margin: 20px;
+}
+/* WORK SECTION */
+.deep {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+.work {
+    text-align: center;
+}
+.addPadding {
+    background-color: #2a86e6;
+    
 }
