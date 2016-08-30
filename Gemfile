@@ -9,6 +9,8 @@ gem 'sqlite3'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
 gem 'bootstrap-social-rails'
+gem 'mail_form'
+gem 'simple_form'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

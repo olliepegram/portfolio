@@ -128,16 +128,14 @@
 }
 /* ABOUT SECTION */
 .about {
-    width: 45%;
+    width: 38%;
     background-color: #6534ff;
-    height:600px;
+    height:500px;
     float:left;
-    border-top:3px solid #6534ff;
-    border-bottom:3px solid #6534ff;
-    border-left:3px solid #6534ff;
-    margin-left:5%;
+    margin-left:12%;
     margin-bottom:20px;
     color: #fff;
+    /*background: linear-gradient( rgba(101,52,255, 1), rgba(255,255,255, 1) );*/
 }
 .about h1 {
     text-align: center;
@@ -160,16 +158,17 @@
 }
 .about .about-text {
   font-weight:bolder;
+  font-size: 18px;
 }
 /*CONTACT SECTION*/
 .contact {
-  height: 600px;
-  width: 45%;
+  height: 500px;
+  width: 38%;
   padding: 30px;
   background-color: #fff;
   float:left;
   color:#000;
-  margin-right:5%;
+  margin-right:12%;
   border-top:3px solid #6534ff;
   border-bottom:3px solid #6534ff;
   border-right:3px solid #6534ff;
@@ -177,7 +176,7 @@
 /* WORK SECTION */
 .deep {
     height: 600px;
-    width: 100%;
+    width: 98%;
     padding: 30px;
     clear:both;
     background-color:#fff;
