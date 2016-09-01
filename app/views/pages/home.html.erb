@@ -12,13 +12,19 @@
 
     <div class="social">
         <div class="social1" style="border-left:2px solid #6534ff;">
-            <p>Linkedin</p>
+            <p>
+                <a href="https://au.linkedin.com/in/oliver-pegram-a38635123" target="_blank">Linkedin</a>
+            </p>
         </div>
         <div class="social2">
-            <p>GitHub</p>
+            <p>
+                <a href="https://github.com/olliepegram" target="_blank">GitHub</a>
+            </p>
         </div>
         <div class="social3" style="border-right:2px solid #6534ff;">
-            <p>Twitter</p>
+            <p>
+                <a href="https://twitter.com/olliepegram" target="_blank">Twitter</a>
+            </p>
         </div>
     </div>
 </div>
@@ -30,35 +36,49 @@
         <h3>Web Developer</h3>
         <p class="about-text">About me</p>
         <p>I'm an 19 year old developer from Sydney, Australia.</p>
-        <p>I like to make and break stuff, </p>
+        <p>I like to make and break stuff,
+        </p>
         <p>Preferably whilst drinking coffee.</p>
     </div>
     <div class="contact">
-      <h1>get in touch</h1>
+        <h1>get in touch</h1>
+        <h2>I'd love to hear from you</h2>
+        <div class="form">
+
+        <%= render 'enquiries/form', enquiry: @enquiry %>
     </div>
+    <div>
+        <% flash.each do |key, value| %>
+        <div>
+            <a href="#" data-dismiss="alert">×</a>
+            <%= value %>
+        </div>
+        <% end %>
+    </div>
+</div>
 
-    <div class="wrapper deep">
-        <div class="row work">
-            <div class="col-md-offset-1 col-md-10">
-                <div class="addPadding">
-                    <div class="sidebar1">
-                        <div class="title">Project#1</div>
-                        <div class="project-desc">This is a project... blah blah.</div>
-                    </div>
-                    <div class="project-image"></div>
-
+<div class="wrapper deep">
+    <div class="row work">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="addPadding">
+                <div class="sidebar1">
+                    <div class="title">Observe Studio</div>
+                    <div class="project-desc">A creative media company that </br>produces websites/designs</div>
                 </div>
+                <div class="project-image"><img src="/assets/work.png"></div>
+
             </div>
-            <div class="col-md-offset-1 col-md-10">
-                <div class="addPadding">
-                    <div class="sidebar">
-                        <div class="title">Project#2</div>
-                        <div class="project-desc">This is a project... blah blah.</div>
-                    </div>
-                    <div class="project-image"></div>
-
+        </div>
+        <div class="col-md-offset-1 col-md-10">
+            <div class="addPadding">
+                <div class="sidebar">
+                    <div class="title">Project#2</div>
+                    <div class="project-desc">This is a project... blah blah.</div>
                 </div>
+                <div class="project-image"></div>
+
             </div>
         </div>
     </div>
+</div>
 </div>

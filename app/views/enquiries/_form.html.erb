@@ -1,0 +1,11 @@
+<%= simple_form_for(@enquiry) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-horizontal">
+    <%= f.input :name, label: 'Name', input_html: { class: 'special' } %>
+    <%= f.input :email, input_html: { class: 'special' } %>
+    <%= f.input :message, input_html: { class: 'special' } %>
+
+    <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+  </div>
+<% end %>

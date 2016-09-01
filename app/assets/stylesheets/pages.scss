@@ -2,10 +2,48 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .bod {
-    background-color: #fff;
+    background-color: #fff;/*FDBE69 #FEC3C8*/
     font-family: 'Miriam Libre', sans-serif;
     height: 100%;
     width: 100%;
+// background-color: #FDBE69;
+// background-image: url(images/linear_bg_1.png);
+// background-repeat: repeat-y;
+//
+// /* Safari 4-5, Chrome 1-9 */
+// background: -webkit-gradient(linear, left top, right top, from(#FDBE69), to(#FDC3BA));
+//
+// /* Safari 5.1, Chrome 10+ */
+// background: -webkit-linear-gradient(left, #FDBE69, #FDC3BA);
+//
+// /* Firefox 3.6+ */
+// background: -moz-linear-gradient(left, #2F2727, #1a82f7);
+//
+// /* IE 10 */
+// background: -ms-linear-gradient(left, #2F2727, #1a82f7);
+//
+// /* Opera 11.10+ */
+// background: -o-linear-gradient(left, #2F2727, #1a82f7);
+// background: url(/assets/bg4.jpg) no-repeat center center fixed;
+// -webkit-background-size: cover;
+// -moz-background-size: cover;
+// -o-background-size: cover;
+// background-size: cover;
+}
+
+.bod a {
+  text-decoration:none;
+  color:inherit;
+}
+
+.bod a:hover {
+  text-decoration: none;
+  color:inherit;
+}
+
+.bod a:visited {
+  text-decoration: none;
+  color:inherit;
 }
 
 .top {
@@ -164,7 +202,6 @@
 .contact {
   height: 500px;
   width: 38%;
-  padding: 30px;
   background-color: #fff;
   float:left;
   color:#000;
@@ -173,13 +210,24 @@
   border-bottom:3px solid #6534ff;
   border-right:3px solid #6534ff;
 }
+
+.contact h1 {
+  text-align: center;
+  padding:10px;
+}
+
+.contact h2 {
+  font-size:25px;
+  padding-left:50px;
+  padding-top:35px;
+}
 /* WORK SECTION */
 .deep {
     height: 600px;
     width: 98%;
     padding: 30px;
     clear:both;
-    background-color:#fff;
+
     margin:0 auto;
 }
 .work {
@@ -191,12 +239,18 @@
     height: 200px;
     background: url("/assets/bg1.png");
     border:3px solid #6534ff;
-    
+    z-index: 9999;
     margin:20px;
+}
+.addPadding img {
+  height:194px;
+  width:635.5px;
+  float: left;
+  z-index: -9999;
 }
 .addPadding:hover {
     /* top, transparent red, faked with gradient */
-    background: linear-gradient( rgba(252,205,211, 0.45), rgba(252,205,211, 0.45) ), url("/assets/bg1.png");
+    background: linear-gradient( rgba(252,205,211, 0.45), rgba(252,205,211, 0.45) );
 }
 .sidebar {
     background-color: #6534ff;
@@ -205,6 +259,7 @@
     position: relative;
     width:50%;
     color:#fff;
+    z-index: 9999;
 }
 
 .sidebar:before {

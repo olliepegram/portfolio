@@ -7,13 +7,9 @@ gem 'rails', '~> 5.0.0'
 
 
 
-gem 'pg'
-
-
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
 gem 'bootstrap-social-rails'
-gem 'mail_form'
 gem 'simple_form'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -41,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
@@ -53,6 +50,12 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+group :production do
+    gem 'rails_12factor'
+        gem 'pg'
+end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
