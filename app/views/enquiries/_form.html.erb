@@ -2,9 +2,12 @@
   <%= f.error_notification %>
 
   <div class="form-horizontal">
-    <%= f.input :name, label: 'Name', input_html: { class: 'special' } %>
-    <%= f.input :email, input_html: { class: 'special' } %>
-    <%= f.input :message, input_html: { class: 'special' } %>
+    <div class="form-item"><p class="label">Name</p>
+    <%= f.input :name, label: false, required: false, input_html: { class: 'special' } %></div>
+    <div class="form-item"><p class="label">Email</p>
+    <%= f.input :email, label: false, required: false, input_html: { class: 'special' } %></div>
+    <div class="form-item"><p class="label">Message</p>
+    <%= f.input :message, label: false, required: false, input_html: { class: 'special' } %></div>
 
     <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
   </div>

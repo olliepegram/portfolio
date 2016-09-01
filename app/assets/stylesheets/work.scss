@@ -1,0 +1,107 @@
+/* WORK SECTION */
+.deep {
+    height: 600px;
+    width: 98%;
+    padding: 30px;
+    clear:both;
+
+    margin:0 auto;
+}
+.work {
+    text-align: center;
+    margin: 20px;
+}
+.addPadding {
+    background-color: #2a86e6;
+    height: 200px;
+    background: url("/assets/bg1.png");
+    border:3px solid #6534ff;
+    z-index: 9999;
+    margin:20px;
+    background:
+       /* top, transparent red, faked with gradient */
+       linear-gradient( to right,
+         rgba(255, 255, 255, 0.5),
+         rgba(255, 255, 255, 0.5)
+       ),
+       /* bottom, image */
+       url("/assets/bg1.png");
+}
+.addPadding:hover {
+
+}
+.sidebar {
+    background-color: #6534ff;
+    float: left;
+    height: 100%;
+    position: relative;
+    width:50%;
+    color:#fff;
+    z-index: 9999;
+}
+
+.sidebar:before {
+   content:"";
+   position: absolute;
+   left: 100%;
+   top: 80px;
+   width: 0;
+   height: 0;
+   border-top: 12px solid transparent;
+   border-left: 20px solid #6534ff;
+   border-bottom: 12px solid transparent;
+}
+.sidebar1 {
+    background-color: #6534ff;
+    float: right;
+    height: 100%;
+    position: relative;
+    width:50%;
+    color:#fff;
+}
+
+.sidebar1:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 80px;
+   width: 0;
+   height: 0;
+   border-top: 12px solid transparent;
+   border-right: 20px solid #6534ff;
+   border-bottom: 12px solid transparent;
+}
+
+.addPadding1 {
+    height: 200px;
+    background: url("/assets/work.png");
+    border:3px solid #6534ff;
+
+    margin:20px;
+    background:
+       /* top, transparent red, faked with gradient */
+       linear-gradient( to left,
+         rgba(255, 255, 255, 0.5),
+         rgba(255, 255, 255, 0.5)
+       ),
+       /* bottom, image */
+       url("/assets/work.png");
+}
+
+.addPadding1:hover {
+
+}
+
+.sidebar .title, .sidebar1 .title {
+  padding:20px;
+  font-size:22px;
+}
+
+.sidebar .project-desc, .sidebar1 .project-desc {
+  padding:10px;
+  font-size:20px;
+}
+
+@media (max-width: 800px) {
+
+}
