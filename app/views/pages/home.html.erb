@@ -3,10 +3,14 @@
         <div class="ollie">Ollie</div><div class="pegram">Pegram</div>
         <h2>Developer from Sydney</h2>
         <div class="view-b">
-            <p>View Work</p>
+            <p>
+                <a href="#deep">View Work</a>
+            </p>
         </div>
         <div class="cont-b">
-            <p>About Me</p>
+            <p>
+                <a href="#about">About Me</a>
+            </p>
         </div>
     </div>
 
@@ -30,7 +34,7 @@
 </div>
 
 <div class="container-fluidd">
-    <div class="about">
+    <div id="about">
         <h1>hi there.</h1>
         <h2>Ollie Pegram</h2>
         <h3>Web Developer</h3>
@@ -45,24 +49,25 @@
         <h2>I'd love to hear from you</h2>
         <div class="form">
 
-        <%= render 'enquiries/form', enquiry: @enquiry %>
-    </div>
-    <div>
-        <% flash.each do |key, value| %>
-        <div>
-            <a href="#" data-dismiss="alert">×</a>
-            <%= value %>
+            <%= render 'enquiries/form', enquiry: @enquiry %>
         </div>
-        <% end %>
+        <div>
+            <% flash.each do |key, value| %>
+            <div>
+                <a href="#" data-dismiss="alert">×</a>
+                <%= value %>
+            </div>
+            <% end %>
+        </div>
     </div>
-</div>
-<div class="wrapper deep">
-    <div class="row work">
-        <div class="col-md-offset-1 col-md-10">
-            <div class="addPadding1">
-                <div class="sidebar1">
-                    <div class="title">Observe Studio</div>
-                    <div class="project-desc">A creative media company that </br>produces websites/designs</div>
+    <div class="wrapper deep">
+        <div class="row work">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="addPadding1">
+                    <div class="sidebar1">
+                        <div class="title">Observe Studio</div>
+                        <div class="project-desc">A creative media company that
+                        </br>produces websites/designs</div>
                 </div>
                 <div class="project-image"></div>
 

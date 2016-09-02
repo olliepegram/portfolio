@@ -1,98 +1,109 @@
 /* ABOUT SECTION */
-.about {
+#about {
     width: 38%;
     background-color: #6534ff;
-    height:500px;
-    float:left;
-    margin-left:12%;
-    margin-bottom:20px;
+    height: 500px;
+    float: left;
+    margin-left: 12%;
+    margin-bottom: 20px;
     color: #fff;
     /*background: linear-gradient( rgba(101,52,255, 1), rgba(255,255,255, 1) );*/
 }
-.about h1 {
+
+#about h1 {
     text-align: center;
-    padding:10px;
+    padding: 10px;
 }
-.about h2, .about h3 {
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size:25px;
-  line-height: 10px;
+
+#about h2,
+#about h3 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    line-height: 10px;
 }
-.about h2 {
-  padding-top: 40px;
+
+#about h2 {
+    padding-top: 40px;
 }
-.about h3 {
-  padding-bottom: 40px;
+
+#about h3 {
+    padding-bottom: 40px;
 }
-.about p {
-    padding-left:80px;
+
+#about p {
+    padding-left: 80px;
 }
-.about .about-text {
-  font-weight:bolder;
-  font-size: 18px;
+
+#about .about-text {
+    font-weight: bolder;
+    font-size: 18px;
 }
 /*CONTACT SECTION*/
 .contact {
-  height: 500px;
-  width: 38%;
-  background-color: #fff;
-  float:left;
-  color:#000;
-  margin-right:12%;
-  border-top:3px solid #6534ff;
-  border-bottom:3px solid #6534ff;
-  border-right:3px solid #6534ff;
+    height: 500px;
+    width: 38%;
+    background-color: #fff;
+    float: left;
+    color: #000;
+    margin-right: 12%;
+    border-top: 3px solid #6534ff;
+    border-bottom: 3px solid #6534ff;
+    border-right: 3px solid #6534ff;
 }
 
 .contact h1 {
-  text-align: center;
-  padding:10px;
+    text-align: center;
+    padding: 10px;
 }
 
 .contact h2 {
-  font-size:25px;
-  padding-left:50px;
-  padding-top:35px;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-top: 35px;
 }
 /*FORM*/
 .form {
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 .form-horizontal .special {
     width: 70%;
     background-color: #fff;
-    margin:20px;
+    margin: 20px;
     padding: 10px;
     border: 2px solid #6534ff;
     display: block;
-    height:43px;
+    height: 43px;
 }
+
 .form-horizontal .message {
-  height:70px;
+    height: 70px;
 }
+
 .form-horizontal .message-label {
-  height:70px !important;
+    height: 70px !important;
 }
+
 .form-horizontal .label {
     float: left;
-    width:100px;
+    width: 100px;
     min-width: auto;
-    padding:13px;
+    padding: 13px;
     text-align: center;
     background-color: #6534ff;
     color: #fff;
     border-bottom: 4px solid #6534ff;
     border-radius: 0;
-    font-size:14px;
+    font-size: 14px;
     height: 43px;
 }
 /*SUBMIT BUTTON*/
 .form-horizontal .btn {
     text-align: center;
     width: 30%;
-    margin: 20px 0%;
+    margin: 20px 0;
     border-radius: 0;
     background-color: #fff;
     border-top: 2px solid #6534ff;
@@ -104,6 +115,7 @@
     box-shadow: inset 0 0 0 0 #6534ff;
     transition: all ease 0.5s;
 }
+
 .form-horizontal .btn:hover {
     box-shadow: inset 0 100px 0 0 #6534ff;
     border-top: 2px solid #6534ff;
@@ -111,93 +123,105 @@
 }
 /*RESPONSIVE*/
 @media (max-width:1645px) {
-    .contact {
 
-    }
-    .contact h2 {
-
-    }
-    // .form-horizontal .special {
-    //     width: 50%;
-    //     background-color: #fff;
-    //     margin: 20px 0;
-    //     padding: 10px;
-    //     border: 2px solid #6534ff;
-    //     display: block;
-    // }
-    // .form-horizontal label {
-    //     float: left;
-    //     min-width: auto;
-    //     max-height: 50px;
-    //     padding: 10px;
-    //     text-align: center;
-    //     background-color: #6534ff;
-    //     color: #fff;
-    //     border-bottom: 4px solid #6534ff;
-    // }
-    .contact .form-horizontal .btn {
-
-    }
 }
 @media (max-width:1190px) {
-  .contact {
-    height: auto;
-    width: 60%;
-    background-color: #fff;
-    color:#000;
-    clear:both;
-    margin:0 auto;
-    border-left:3px solid #6534ff;
-    border-bottom:3px solid #6534ff;
-    border-right:3px solid #6534ff;
-    float: none;
-  }
-  .contact h2 {
-    font-size:25px;
-    text-align: center;
-    padding-left: 0;
-    padding-top:10px;
-  }
-  .about {
-      width: 60%;
-      background-color: #6534ff;
-      height:400px;
-      margin:0 auto;
-      clear:both;
-      color: #fff;
-      float: none;
-  }
+    .contact {
+        height: auto;
+        width: 60%;
+        background-color: #fff;
+        color: #000;
+        clear: both;
+        margin: 0 auto;
+        border-left: 3px solid #6534ff;
+        border-bottom: 3px solid #6534ff;
+        border-right: 3px solid #6534ff;
+        float: none;
+    }
+
+    .contact h2 {
+        font-size: 25px;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    #about {
+        width: 60%;
+        background-color: #6534ff;
+        height: 400px;
+        margin: 0 auto;
+        clear: both;
+        color: #fff;
+        float: none;
+    }
+}
+@media (max-width: 800px) {
+    .form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-horizontal .special {
+        width: 90%;
+        background-color: #fff;
+        margin: 0 10px;
+        padding: 10px;
+        border: 2px solid #6534ff;
+        display: block;
+    }
+
+    .form-horizontal .label {
+        display: block;
+        width: 90%;
+        min-width: auto;
+        padding: 15px;
+        text-align: center;
+        background-color: #6534ff;
+        margin: 10px 10px 0;
+        color: #fff;
+        border-bottom: 4px solid #6534ff;
+        border-radius: 0;
+        float: none;
+    }
+
+    .form-horizontal .btn {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
 }
 
-@media (max-width: 800px) {
-  .form {
-    width:90%;
-    margin:0 auto;
-  }
-  .form-horizontal .special {
-      width: 90%;
-      background-color: #fff;
-      margin:0 10px;
-      padding: 10px;
-      border: 2px solid #6534ff;
-      display: block;
-  }
-  .form-horizontal .label {
-      display: block;
-      width:90%;
-      min-width: auto;
-      padding:15px;
-      text-align: center;
-      background-color: #6534ff;
-      margin:10px 10px 0 10px;;
-      color: #fff;
-      border-bottom: 4px solid #6534ff;
-      border-radius: 0;
-      float:none;
-  }
-  .form-horizontal .btn {
-    width:90%;
-    margin:10px auto;
-    text-align:center;
-  }
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    #about h2,
+    #about h3 {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 25px;
+        line-height: 20px;
+    }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
 }

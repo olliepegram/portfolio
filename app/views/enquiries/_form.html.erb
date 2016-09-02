@@ -1,14 +1,17 @@
 <%= simple_form_for(@enquiry) do |f| %>
-  <%= f.error_notification %>
+<%= f.error_notification %>
 
-  <div class="form-horizontal">
-    <div class="form-item"><p class="label">Name</p>
-    <%= f.input :name, label: false, required: false, input_html: { class: 'special' } %></div>
-    <div class="form-item"><p class="label">Email</p>
-    <%= f.input :email, label: false, required: false, input_html: { class: 'special' } %></div>
-    <div class="form-item"><p class="label message-label">Message</p>
-    <%= f.input :message, label: false, required: false, input_html: { class: 'special message' } %></div>
+<div class="form-horizontal">
+    <div class="form-item">
+        <p class="label">Name</p>
+        <%= f.input :name, label: false, required: false, input_html: { class: 'special' } %></div>
+    <div class="form-item">
+        <p class="label">Email</p>
+        <%= f.input :email, label: false, required: false, input_html: { class: 'special' } %></div>
+    <div class="form-item">
+        <p class="label message-label">Message</p>
+        <%= f.input :message, label: false, required: false, input_html: { class: 'special message' } %></div>
 
     <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-  </div>
+</div>
 <% end %>
