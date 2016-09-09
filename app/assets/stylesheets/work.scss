@@ -1,10 +1,16 @@
 /* WORK SECTION */
 .deep {
-    height: 600px;
-    width: 98%;
+    height: auto;
+    width: 100%;
     padding: 30px;
     clear: both;
     margin: 0 auto;
+    background-color: #000;
+}
+
+.deep h1 {
+  text-align: center;
+  color:#fff;
 }
 
 .work {
@@ -13,28 +19,26 @@
 }
 
 .addPadding {
-    background-color: #2a86e6;
     height: 200px;
-    background: url("/assets/bg1.png");
-    border: 3px solid #6534ff;
-    z-index: 9999;
+    background: url("/assets/work2.png");
+    border: 3px solid #fff;
     margin: 20px;
-    /* top, transparent red, faked with gradient */
-    background:linear-gradient( to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ),
-    /* bottom, image */
-    url(  "/assets/bg1.png");
 }
 
-.addPadding:hover {}
+.addPadding:hover {
+  /* top, transparent red, faked with gradient */
+  background:linear-gradient( to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ),
+  /* bottom, image */
+  url(  "/assets/work2.png");
+}
 
 .sidebar {
-    background-color: #6534ff;
+    background-color: #fff;
     float: left;
     height: 100%;
     position: relative;
     width: 50%;
-    color: #fff;
-    z-index: 9999;
+    color: #000 !important;
 }
 
 .sidebar:before {
@@ -45,17 +49,17 @@
     width: 0;
     height: 0;
     border-top: 12px solid transparent;
-    border-left: 20px solid #6534ff;
+    border-left: 20px solid #fff;
     border-bottom: 12px solid transparent;
 }
 
 .sidebar1 {
-    background-color: #6534ff;
+    background-color: #fff;
     float: right;
     height: 100%;
     position: relative;
     width: 50%;
-    color: #fff;
+    color: #000;
 }
 
 .sidebar1:before {
@@ -66,32 +70,38 @@
     width: 0;
     height: 0;
     border-top: 12px solid transparent;
-    border-right: 20px solid #6534ff;
+    border-right: 20px solid #fff;
     border-bottom: 12px solid transparent;
 }
 
 .addPadding1 {
     height: 200px;
     background: url("/assets/work.png");
-    border: 3px solid #6534ff;
+    border: 3px solid #fff;
     margin: 20px;
-    /* top, transparent red, faked with gradient */
-    background:linear-gradient( to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ),
-    /* bottom, image */
-    url(  "/assets/work.png");
 }
 
-.addPadding1:hover {}
+.addPadding1:hover {
+  /* top, transparent red, faked with gradient */
+  background:linear-gradient( to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ),
+  /* bottom, image */
+  url(  "/assets/work.png");
+}
+
 
 .sidebar .title,
 .sidebar1 .title {
     padding: 20px;
     font-size: 22px;
+    color:#000;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .sidebar .project-desc,
 .sidebar1 .project-desc {
     padding: 10px;
     font-size: 20px;
+    color:#000;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 @media (max-width: 800px) {}

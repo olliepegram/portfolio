@@ -1,41 +1,33 @@
-<div class="top">
-    <div class="name">
-        <div class="ollie">Ollie</div><div class="pegram">Pegram</div>
-        <h2>Developer from Sydney</h2>
-        <div class="view-b">
-            <p>
-                <a href="#deep">View Work</a>
-            </p>
-        </div>
-        <div class="cont-b">
-            <p>
-                <a href="#about">About Me</a>
-            </p>
-        </div>
+<img class="nav-name" src="/assets/logo.png" height="50px" width="350px">
+<nav class="top-nav">
+    <a onclick="scrollTo(0)" class="btn btn-main btn-selected">home</a>
+    <a type="button" class="btn btn-main btn-selected">about</a>
+    <a onclick="scrollTo('#portfolio')" class="btn btn-main btn-selected">portfolio</a>
+    <a onclick="scrollTo('#contact')" class="btn btn-main btn-selected">contact</a>
+</nav>
+<div class="color-fill">
+    <div class="title-top">
+        <div class="hi">hi</div>
+        <div class="there">there.</div>
+        <h2>fullstack developer | sydney
+        </h2>
+        <a class="btn btn-title" onclick="scrollTo('#portfolio')">View work</a>
+        <a class="btn btn-title" onclick="scrollTo('#about')">Contact me</a>
     </div>
-
     <div class="social">
-        <div class="social1">
-            <p>
-                <a href="https://au.linkedin.com/in/oliver-pegram-a38635123" target="_blank">Linkedin</a>
-            </p>
-        </div>
-        <div class="social2">
-            <p>
-                <a href="https://github.com/olliepegram" target="_blank">GitHub</a>
-            </p>
-        </div>
-        <div class="social3">
-            <p>
-                <a href="https://twitter.com/olliepegram" target="_blank">Twitter</a>
-            </p>
-        </div>
+
+        <a href="https://au.linkedin.com/in/oliver-pegram-a38635123" class="btn btn-title" style="border-bottom:0;" target="_blank">Linkedin</a>
+
+        <a href="https://github.com/olliepegram" class="btn btn-title" style="border-bottom:0;" target="_blank">GitHub</a>
+
+        <a href="https://twitter.com/olliepegram" class="btn btn-title" style="border-bottom:0;" target="_blank">Twitter</a>
+
     </div>
 </div>
 
 <div class="container-fluidd">
-    <div id="about">
-        <h1>hi there.</h1>
+    <div id="about" class="nextButton">
+        <h1>About me</h1>
         <h2>Ollie Pegram</h2>
         <h3>Web Developer</h3>
         <p class="about-text">About me</p>
@@ -61,8 +53,9 @@
         </div>
     </div>
     <div class="wrapper deep">
+        <h1>My work</h1>
         <div class="row work">
-            <div class="col-md-offset-1 col-md-10">
+            <div class="col-md-offset-2 col-md-8">
                 <div class="addPadding1">
                     <div class="sidebar1">
                         <div class="title">Observe Studio</div>
@@ -73,11 +66,11 @@
 
             </div>
         </div>
-        <div class="col-md-offset-1 col-md-10">
+        <div class="col-md-offset-2 col-md-8">
             <div class="addPadding">
                 <div class="sidebar">
-                    <div class="title">Project#2</div>
-                    <div class="project-desc">This is a project... blah blah.</div>
+                    <div class="title">Portfolio</div>
+                    <div class="project-desc">My personal site to display my projects.</div>
                 </div>
                 <div class="project-image"></div>
 
@@ -85,4 +78,7 @@
         </div>
     </div>
 </div>
+<footer>
+    <p>Ollie Pegram</p>
+</footer>
 </div>

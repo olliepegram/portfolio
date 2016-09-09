@@ -13,9 +13,11 @@
  *= require_tree .
  *= require_self
  */
-@import 'https://fonts.googleapis.com/css?family=Work+Sans';
 @import 'https://fonts.googleapis.com/css?family=Miriam+Libre';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
  @import "bootstrap-social";
+
+ $primary-color: #6534FF;

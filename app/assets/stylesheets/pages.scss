@@ -1,35 +1,23 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$primary-color: #6534FF;
+
+* {
+    font-family: 'Miriam Libre', sans-serif;
+    color: #fff;
+
+}
+
+a {
+  cursor: pointer;
+}
 
 .bod {
-    background-color: #fff;
-    /*FDBE69 #FDC3BA*/
-    font-family: 'Miriam Libre', sans-serif;
+    background: $primary-color;
     height: 100%;
-    width: 100%; // background-color: #FDBE69;
-    // background-image: url(images/linear_bg_1.png);
-    // background-repeat: repeat-y;
-    //
-    // /* Safari 4-5, Chrome 1-9 */
-    // background: -webkit-gradient(linear, left top, right top, from(#FDBE69), to(#FDC3BA));
-    //
-    // /* Safari 5.1, Chrome 10+ */
-    // background: -webkit-linear-gradient(left, #FDBE69, #FDC3BA);
-    //
-    // /* Firefox 3.6+ */
-    // background: -moz-linear-gradient(left, #2F2727, #1a82f7);
-    //
-    // /* IE 10 */
-    // background: -ms-linear-gradient(left, #2F2727, #1a82f7);
-    //
-    // /* Opera 11.10+ */
-    // background: -o-linear-gradient(left, #2F2727, #1a82f7);
-    // background: url(/assets/bg4.jpg) no-repeat center center fixed;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
+    width: 100%;
+    color:#fff;
 }
 
 .bod a {
@@ -52,184 +40,130 @@
     font-family: 'Miriam Libre', sans-serif;
     width: 100%;
     height: 100%;
-    border-top: 5px solid #6534ff;
-}
-
-.name {
-    text-align: center;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-}
-
-.name .ollie,
-.name .pegram {
-    font-size: 40px;
-    display: inline-block;
-    border: 3px solid #6534ff;
-    padding: 15px;
-}
-
-.name .ollie {
-    color: #6534ff;
-}
-
-.name .pegram {
-    background-color: #6534ff;
-    color: #fff;
-}
-
-.name h2 {
-    font-size: 30px;
-}
-
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    .name .ollie,
-    .name .pegram {
-        font-size: 40px;
-        display: block;
-        border: 3px solid #6534ff;
-        padding: 15px;
-        width:400px;
-    }
-}
-
-.cont-b,
-.view-b {
-    margin: 30px auto;
-    width: 150px;
-    padding: 12px;
-    display: inline-block;
-    border-top: 2px solid #6534ff;
-    border-bottom: 2px solid #6534ff;
-    margin: 15px;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #6534ff;
-    transition: all ease 0.8s;
-    clear:both;
-}
-
-.cont-b:hover,
-.view-b:hover {
-    box-shadow: inset 0 100px 0 0 #6534ff;
-    color: #fff;
-}
-
-.cont-b p,
-.view-b p {
-    margin: auto;
-    display: inline-block;
 }
 
 .social {
-    text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    clear: both;
+  margin-top:60px;
+  width: 100%;
+  text-align: center;
 }
 
-.social1,
-.social2,
-.social3 {
+.bod .top-nav {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 100%;
+    transition: 0.5s;
+    text-align: right;
+    font-size: 24px;
+    background-color: $primary-color;
+}
+
+@media (max-width: 800px) {
+  .bod .nav-name {
+    display: block;
+  }
+  .bod .top-nav {
+    display: block;
+  }
+}
+
+.bod .nav-name {
     display: inline-block;
-    margin: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: default;
+    padding: 5px;
+    margin: 5px;
+
+    text-transform: uppercase;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.bod .color-fill {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primary-color;
+}
+
+.bod .title-top {
+  margin-top: 35vh;
+  width: 100%;
+  text-align: center;
+}
+
+.bod .there, .hi {
+    color: $primary-color;
+    display: inline-block;
+    font-size: 40px;
+    border: 3px solid #fff;
+    padding: 15px;
+    margin: -5px;
+}
+
+.bod .hi {
+    color: #fff;
+}
+
+.bod .there {
+    background-color: #fff;
+    color: $primary-color;
+}
+
+.bod .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
     padding: 10px;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #6534ff;
+    position: relative;
+    box-shadow: inset 0 0 0 0 #fff;
     transition: all ease 0.8s;
+    border-radius: 0;
+    border-left: 0;
+    border-right:0;
 }
 
-.social1:hover {
-    box-shadow: inset 100px 0 0 0 #6534ff;
-    color: #fff;
+.bod .btn:hover {
+  box-shadow: inset 0 100px 0 0 #fff;
+  color:$primary-color;
 }
 
-.social2:hover {
-    box-shadow: inset 0 100px 0 0 #6534ff;
-    color: #fff;
+.bod .btn-main {
+    text-transform: uppercase;
+    margin: 10px;
 }
 
-.social3:hover {
-    box-shadow: inset -100px 0 0 0 #6534ff;
-    color: #fff;
-}
-
-.social1 p,
-.social2 p,
-.social3 p {
-    margin: auto;
-}
-
-.social1 {
-    border-top: 2px solid #6534ff;
-    border-left: 2px solid #6534ff;
-}
-
-.social2 {
-    border-top: 2px solid #6534ff;
-}
-
-.social3 {
-    border-top: 2px solid #6534ff;
-    border-right: 2px solid #6534ff;
-}
-/* ----------- Non-Retina Screens ----------- */
-@media (max-width:1600px) {
-    .social1,
-    .social2,
-    .social3 {
-        margin: 40px;
-    }
-}
-@media (max-width:800px) {
-    .social1,
-    .social2,
-    .social3 {
-        margin: 20px;
-    }
-}
-@media (max-width:400px) {
-    .social1,
-    .social2,
-    .social3 {
-        margin: 0;
-        border-left: 0 solid #6534ff;
-        border-right: 0 solid #6534ff;
-    }
-}
-
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    .social1,
-    .social2,
-    .social3 {
-        margin: 0;
-        border-left: 0 solid #6534ff;
-        border-right: 0 solid #6534ff;
-    }
+.bod .btn-title {
+  text-transform: uppercase;
+  margin: 10px 30px;
+  border-top: 2px solid #fff;
+  border-bottom:2px solid #fff;
+  font-size: 16px;
 }
 
 .container-fluidd {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 100%;
+  position: relative;
+  margin-top: calc(100vh - 115px);
+  width: 100%;
+  padding-top: 95px;
+  z-index: 1;
+  background-color: #fff;
+  height:100%;
+}
+
+footer {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+}
+
+footer p {
+  color:#000;
 }
