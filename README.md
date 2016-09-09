@@ -17,4 +17,6 @@
 + I have been concistent with my design throughout the site, with border being the same width and colors and fonts matching the design. For the responsive element I have been able to keep the design roughly the same but also more usable for mobile users or smaller screens.
 
 ##Supporting documents
-
+[Logo](https://github.com/olliepegram/portfolio/blob/master/logo.png)
+[Wire frame](https://github.com/olliepegram/portfolio/blob/master/wireframe.png)
+[Style Guide](http://codepen.io/olliepegram/pen/PGPYrJ)
