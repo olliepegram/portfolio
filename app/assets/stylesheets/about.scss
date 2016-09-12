@@ -155,6 +155,7 @@
         color: #fff;
         float: none;
     }
+
 }
 @media (max-width: 800px) {
     .form {
@@ -189,6 +190,9 @@
         width: 90%;
         margin: 10px auto;
         text-align: center;
+    }
+    .bod .social .fa {
+      margin:10px;
     }
 }
 
